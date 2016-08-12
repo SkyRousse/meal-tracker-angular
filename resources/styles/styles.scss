@@ -24,6 +24,7 @@ $font-stack: 'Oswald', sans-serif;
   @include flexbox();
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-around;
   img {
     @include flex(1);
     max-width: 150px;
@@ -47,13 +48,14 @@ h1 {
     @include flexbox();
     flex-wrap: wrap;
     flex-direction: row;
-
+    justify-content: space-around;
   }
 
   .meal {
     @include flex(1);
-    background: $yellow; 
+    background: $yellow;
     color: $gray;
+    border: 1px solid rgb(255, 255, 255);
     height: 200px;
     width: 300px;
     margin: 20px;
@@ -62,17 +64,24 @@ h1 {
         margin-top:0;
         text-align: center;
       }
+      h4 {
+        margin-bottom: 5px;
+        border-bottom: 3px solid rgb(245,245,230);
+      }
+      span {
+        font-weight: bold;
+      }
   }
 
+  .meal:hover {
+    cursor: pointer;
+    border: 1px solid rgb(30, 255, 255);
+  }
+
+  .selected .meal {
+    border: 2px solid rgb(30, 255, 255);
+  }
 
   .add-to-cart-btn {
     color: black;
-  }
-
-  .meal-name {
-    font: 100% $font-stack;
-    font-size: 2.75rem;
-    margin-bottom: 5px;
-    border-bottom: 1px solid red;
-    color:#fff;
   }
