@@ -40,7 +40,7 @@ Installation
 ------------
 
 ```
-$ git clone https://github.com/SkyRousse/music-store-angular.git
+$ git clone https://github.com/SkyRousse/meal-tracker-angular.git
 ```
 - npm install
 - bower install
