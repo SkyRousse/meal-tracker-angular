@@ -1,5 +1,6 @@
-$light-steely-grey : rgba(227,229,239,1);
-$blue : rgba(83, 118, 150, 0.9);
+$dark-beige : rgba(156,144,95,1);
+$yellow : rgba(255, 230, 128, 0.9);
+$gray : rgba(140, 137, 128, 1);
 $font-stack: 'Oswald', sans-serif;
 
 
@@ -19,6 +20,25 @@ $font-stack: 'Oswald', sans-serif;
    flex:  $values;
  }
 
+.header-images {
+  @include flexbox();
+  flex-wrap: wrap;
+  flex-direction: row;
+  img {
+    @include flex(1);
+    max-width: 150px;
+    max-height: 150px;
+    margin:auto;
+  }
+}
+
+h1 {
+  font: 100% $font-stack;
+  font-size: 6rem;
+  text-align: center;
+  color: $dark-beige;
+}
+
  .app-wrapper{
    margin:3%, 5%;
  }
@@ -32,8 +52,8 @@ $font-stack: 'Oswald', sans-serif;
 
   .meal {
     @include flex(1);
-    background: $blue;
-    color: $light-steely-grey;
+    background: $yellow; 
+    color: $gray;
     height: 200px;
     width: 300px;
     margin: 20px;
