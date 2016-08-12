@@ -45,10 +45,23 @@ h1 {
  }
 
  .meal-wrapper {
-    @include flexbox();
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+   @include flexbox();
+      h2 {
+        width: 100%;
+        text-align: center;
+        color: rgb(122,154,163);
+      }
+      .main {
+        @include flex(1);
+        @include flexbox();
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 70%;
+      }
+      .edit {
+        @include flex(1);
+      }
   }
 
   .meal {
