@@ -46,6 +46,10 @@ h1 {
  .app-wrapper{
    margin:3%, 5%;
  }
+.view-selector {
+    width: 100%;
+    text-align: center;
+}
 
  .meal-wrapper {
    @include flexbox();
