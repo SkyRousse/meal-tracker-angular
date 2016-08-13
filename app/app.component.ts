@@ -28,10 +28,10 @@ export class AppComponent {
   public meals: Meal[];
   constructor(){
     this.meals = [
-      new Meal("Peach Bannana Smoothie", "Breakfast", "With hotsouce 8fl oz", 225),
-      new Meal("Burrito", "Lunch",  "with sourcream and guac",1000),
-      new Meal("Sun Chips", "Snack", "Harvest Cheddar 1oz",140),
-      new Meal("Spaghetti & Meatballs", "Dinner", "With marinar sauce and parm",440),
+      new Meal("Peach Bannana Smoothie", "Breakfast", "With hotsouce 8fl oz", 225, 0),
+      new Meal("Burrito", "Lunch",  "with sourcream and guac", 1000, 1),
+      new Meal("Sun Chips", "Snack", "Harvest Cheddar 1oz", 140, 2),
+      new Meal("Spaghetti & Meatballs", "Dinner", "With marinar sauce and parm", 440, 3),
     ]
   }
   mealWasSelected(clickedMeal: Meal): void {

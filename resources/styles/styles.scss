@@ -38,6 +38,9 @@ h1 {
   font-size: 6rem;
   text-align: center;
   color: $dark-beige;
+  padding: 30px;
+  background-color: #eee;
+  margin: 30px 0;
 }
 
  .app-wrapper{
@@ -58,9 +61,18 @@ h1 {
         flex-direction: row;
         justify-content: space-around;
         width: 70%;
+        border-right: 1px solid rgb(122,154,163);
       }
       .edit {
         @include flex(1);
+        .add-items {
+          width: 100%;
+          border-bottom: 3px dotted rgb(122,154,163);
+        }
+        h3 {
+          text-align: center;
+          color: rgb(122,154,163);
+        }
       }
   }
 
@@ -91,8 +103,13 @@ h1 {
     border: 1px solid rgb(30, 255, 255);
   }
 
+  .meal.edit {
+  background-color: rgb(175,221,233);
+  }
+
   .selected .meal {
     border: 2px solid rgb(30, 255, 255);
+    background-color: rgb(175,221,233);
   }
 
   .add-to-cart-btn {
