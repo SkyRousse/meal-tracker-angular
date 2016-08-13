@@ -59,12 +59,11 @@ h1 {
         color: rgb(122,154,163);
       }
       .main {
-        @include flex(1);
         @include flexbox();
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
-        width: 70%;
+        width: 90%;
         border-right: 1px solid rgb(122,154,163);
       }
       .edit {
@@ -109,6 +108,10 @@ h1 {
 
   .meal.edit {
   background-color: rgb(175,221,233);
+  }
+
+  .meal.add {
+  margin-top:48px;
   }
 
   .selected .meal {
