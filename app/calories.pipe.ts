@@ -11,12 +11,12 @@ export class CaloriesPipe implements PipeTransform{
     if(desiredCalories === "all"){
       return input
     }else if(desiredCalories === "low"){
-      return input.filter(function(food){
-        return(food.calories < 500);
+      return input.filter(function(meal){
+        return(meal.calories < 500);
       });
     }else{
-      return input.filter(function(food){
-        return(food.calories >= 500);
+      return input.filter(function(meal){
+        return(meal.calories >= 500);
       });
     }
   }
